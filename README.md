@@ -1,70 +1,162 @@
-# Getting Started with Create React App
+# Vibrant
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Vibrant is an Event posting web application that allows organizers to post events. It also allows Users to access, and browse through events as they make decisions about which to book.
 
-## Available Scripts
+### By Kelvin Nderitu, 13/10/2022
 
-In the project directory, you can run:
+## Landing Page
 
-### `npm start`
+![image](./src/image/landingpage.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Signup Page
 
-### `npm test`
+![image](./src/image/signup.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Login Page
 
-### `npm run build`
+![image](./client/src/image/login.png)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Listings Page
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+![image](./src/image/events.png)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Create Event
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![image](./src/image/organizer.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Listings Organizer Page
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+![image](./src/image/organizer-main.png)
 
-## Learn More
+## 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+<!-- Watch Demo [Drive Link]() -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Table of Content
 
-### Analyzing the Bundle Size
+- [Vibrant](#vibrant)
+    - [By Kelvin Nderitu, 13/10/2022](#vibrant)
+  - [Landing Page](#landing-page)
+  - [Signup Page](#signup-page)
+  - [Login Page](#login-page)
+    [Create Event](#create-event)
+  - [Listings Page](#listings-page)
+  - [Organizer Page](#listings-details-page)
+  - [Listings Organizer Events](#listings-organizer-page)
+  - [Table of Content](#table-of-content)
+  - [Description](#description)
+  - [Features](#features)
+    - [Requirements](#requirements)
+    - [Installation Process](#installation-process)
+    - [Live Link](#live-link)
+    - [Technology  Used](#technology--used)
+  - [Known Bugs](#known-bugs)
+  - [Licence](#licence)
+  - [Author's Details](#authors-details)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Description
 
-### Making a Progressive Web App
+****
+Vibrant allows organizers to manage their events. The organizer can post, list, edit, and delete events. Users can also make personal accounts to personalize their experiences.
+****
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+[Go Back to the top](#vibrant)
 
-### Advanced Configuration
+## Features
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+As an Organizer you should be able to:
 
-### Deployment
+1. `Register`  an agent account
+2. `Upload` new event
+3. `Update` event
+4. `Delete` event
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+As User you should be able to:
 
-### `npm run build` fails to minify
+1. `Book / Reserve`  an event slot
+2. `View`  events
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+[Go Back to the top](#vibrant)
+
+### Requirements
+
+- Access to  a computer, mobile phone or any other garget
+- Internet access
+- Ruby 2.7.4
+- NodeJS (v16), and npm
+- Heroku CLI
+- Postgresql
+
+
+### Installation Process
+
+****
+
+- Clone to this repo by running the command : `https://github.com/carreuky/vibrant-frontend`
+- Unzip the downloaded files in a folder of choice.
+- Open the folder with your favorite CLI tool.
+- Run `bundle install && npm install --prefix client` on your terminal from inside the root folder of the project
+- Run `rails db:migrate` on your terminal from inside the root folder of the project to run the server
+- `rails s`: run the backend on [http://localhost:3000](http://localhost:3000)
+- `npm start --prefix client`: run the frontend on
+  [http://localhost:4000](http://localhost:4000)
+- If the ports are busy, kindly feel free to change the port inside the server.js file
+- Once the server is up and running, visit the link  `http://localhost:4000` to access the application
+
+  
+ ****
+[Go Back to the top](#Vibrant)
+
+### Live Link
+
+- [Vibrant live link](https://vibrant-e.herokuapp.com/)
+- [Events](https://vibrant-e.herokuapp.com/events)
+- [Users](https://vibrant-e.herokuapp.com/users)
+- [Attendees](https://vibrant-e.herokuapp.com/attendees)
+  
+****
+
+### Technology  Used
+
+- HTML -to develop the structure off the page
+
+- Boostrap  - to style the User Interface
+- Ruby on Rails - To build backend
+- Postgre SQL - To create Database
+- ReactJS - Building component based UI
+  
+
+[Go Back to the top](Vibrant)
+
+****
+
+## Known Bugs
+
+
+****
+
+## License
+
+Copyright (c) 2022 Kelvin Nderitu.
+
+The MIT License
+License: MIT
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+[Go Back to the top](#Vibrant)
+****
+
+## Author's Details
+
+Feel free to reach out via:
+
+- LinkedIn - [Kelvin Nderitu](https://www.linkedin.com/in/kelvin-nderitu-5845b3208/)
+
+[Go Back to the top](#Vibrant)
+****
