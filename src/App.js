@@ -20,12 +20,12 @@ function App() {
   }, []);
 
   return (
-    <div className="flex flex-col h-screen justify-between">
+    <div className="d-flex flex-column min-vh-100">
       {" "}
       <div>
         <Navbar user={user} setUser={setUser} />
       </div>
-      <div>
+      <div className="">
         {user ? (
           <Switch>
             <Route path="/">
@@ -49,7 +49,7 @@ function App() {
           </Switch>
         )}
       </div>
-      <div>
+      <div className="mt-auto">
         <Footer />
       </div>
     </div>
