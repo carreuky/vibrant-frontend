@@ -10,7 +10,7 @@ export default function Navbar({ user, setUser }) {
   };
 
   function logOut() {
-    fetch("/logout", { method: "DELETE" }).then((r) => {
+    fetch("vibrant-api-production.up.railway.app/logout", { method: "DELETE" }).then((r) => {
       if (r.ok) {
         setUser(null);
       }

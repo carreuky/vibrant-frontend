@@ -36,7 +36,7 @@ export default function NewEvent({
     // console.log(eventForm)
 
     if (editText) {
-      fetch(`events/${eventForm.id}`, {
+      fetch(`vibrant-api-production.up.railway.app/events/${eventForm.id}`, {
         method: "PATCH",
         headers: {
           "Content-Type": "application/json",
@@ -59,7 +59,7 @@ export default function NewEvent({
         }
       });
     } else {
-      fetch("/events", {
+      fetch("vibrant-api-production.up.railway.app/events", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

@@ -21,7 +21,7 @@ export default function Login({ setUser }) {
   const loginDetails = { username, password };
   function handleSubmit(e) {
     e.preventDefault();
-    fetch("/login", {
+    fetch("vibrant-api-production.up.railway.app/login", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

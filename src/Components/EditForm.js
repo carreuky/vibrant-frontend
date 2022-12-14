@@ -24,7 +24,7 @@ export default function EditForm({ eventForm,setEventForm,setEdit,edit}) {
 
   function handleSubmit() {
     // setEdit(!edit)}
-    fetch(`https:/events/${eventForm.id}}`, {
+    fetch(`vibrant-api-production.up.railway.app/${eventForm.id}}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",

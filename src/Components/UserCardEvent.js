@@ -17,7 +17,7 @@ export default function UserCardEvent({
   }
 
   useEffect(() => {
-    fetch("/me").then((r) => {
+    fetch("vibrant-api-production.up.railway.app/me").then((r) => {
       if (r.ok) {
         r.json().then((user) => {
           setMine(user.events);
@@ -35,7 +35,7 @@ export default function UserCardEvent({
 
   function handleDeleteClick(one) {
     let id = one.id;
-    fetch(`/events/${id}`, {
+    fetch(`vibrant-api-production.up.railway.app/events/${id}`, {
       method: "DELETE",
     });
     deleteEvent(id);

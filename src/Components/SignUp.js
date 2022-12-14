@@ -24,7 +24,7 @@ export default function SignUp() {
   function handleSubmit(e) {
     e.preventDefault();
 
-    fetch("/signup", {
+    fetch("vibrant-api-production.up.railway.app/signup", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

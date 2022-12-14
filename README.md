@@ -15,7 +15,7 @@ Vibrant is an Event posting web application that allows organizers to post event
 
 ## Login Page
 
-![image](./client/src/image/login.png)
+![image](./src/image/login.png)
 
 ## Listings Page
 
