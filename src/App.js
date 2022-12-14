@@ -20,32 +20,38 @@ function App() {
   }, []);
 
   return (
-    <div className="App">
-      <Navbar user={user} setUser={setUser} />
-      {user ? (
-        <Switch>
-          <Route path="/">
-            <Userpage user={user} />
-          </Route>
-        </Switch>
-      ) : (
-        <Switch>
-          <Route path="/signup">
-            <SignUp />
-          </Route>
-          <Route path="/login">
-            <Login setUser={setUser} />
-          </Route>
-          <Route path="/event">
-            <Events />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
-        </Switch>
-      )}
-
-      <Footer />
+    <div className="flex flex-col h-screen justify-between">
+      {" "}
+      <div>
+        <Navbar user={user} setUser={setUser} />
+      </div>
+      <div>
+        {user ? (
+          <Switch>
+            <Route path="/">
+              <Userpage user={user} />
+            </Route>
+          </Switch>
+        ) : (
+          <Switch>
+            <Route path="/signup">
+              <SignUp />
+            </Route>
+            <Route path="/login">
+              <Login setUser={setUser} />
+            </Route>
+            <Route path="/event">
+              <Events />
+            </Route>
+            <Route path="/">
+              <Home />
+            </Route>
+          </Switch>
+        )}
+      </div>
+      <div>
+        <Footer />
+      </div>
     </div>
   );
 }
